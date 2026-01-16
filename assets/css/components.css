@@ -975,10 +975,15 @@
 .badge {
   display: inline-flex;
   align-items: center;
+  gap: var(--space-1);
   padding: var(--space-1) var(--space-2);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
   border-radius: var(--radius-sm);
+}
+
+.badge svg {
+  flex-shrink: 0;
 }
 
 .badge--license {
@@ -2181,7 +2186,7 @@
 .card__tag--license {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: var(--space-1);
   white-space: nowrap;
 }
 
